@@ -6,3 +6,5 @@
  * Time: 9:03 AM
  */
 
+header('Content-type:application/json;charset=utf-8');
+$json = new stdClass();

@@ -5,9 +5,9 @@
  * Date: 21/10/2018
  * Time: 6:28 AM
  */
-header('Content-type:application/json;charset=utf-8');
+
 include_once "controls/db.php";
-$json = new stdClass();
+include_once "global/global.php";
 
 if (isset($_POST['action'])){
     echo $_POST['action'];
