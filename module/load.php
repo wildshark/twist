@@ -5,6 +5,10 @@
  * Date: 21/10/2018
  * Time: 1:33 PM
  */
+
+echo $action;
+
+/**
 switch ($action){
 
     case 'create-account';
@@ -17,3 +21,4 @@ switch ($action){
         echo $json_out = json_encode($json);
         exit(0);
 }
+ * */

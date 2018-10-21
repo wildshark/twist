@@ -7,15 +7,10 @@
  */
 header('Content-type:application/json;charset=utf-8');
 include_once "controls/db.php";
-
 $json = new stdClass();
 
 if (isset($_POST['action'])){
-    $action = $_POST['action'];
-    require_once "module/load.php";
-}elseif (isset($_GET['action'])){
-    $action = $_GET['action'];
-    //require_once "module/load.php";
+    echo $_POST['action'];
 }else{
     $json->Error = "4100";
     $json->Message ="No action request";
